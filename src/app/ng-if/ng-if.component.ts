@@ -10,10 +10,10 @@ import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
 export class NgIfComponent implements OnInit {
 
   title: string = "ngIf Example";
-  showMe: boolean;
+  showMe: boolean;////
   count = true;
   Meo = true;
- sotine = 100
+  sotine = 100
   constructor() { }
 
   ngOnInit(): void {
