@@ -13,7 +13,7 @@ export class NgIfComponent implements OnInit {
   showMe: boolean;
   count = true;
   Meo = true;
- sotine = 100
+  sotine = 100
   constructor() { }
 
   ngOnInit(): void {
