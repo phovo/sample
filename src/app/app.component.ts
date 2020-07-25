@@ -9,7 +9,7 @@ import { Item } from './models/item'
 })
 export class AppComponent {
 
-count: number = 2;
+count: number = 10;
 
 clearCount() {
   this.count = 0;
