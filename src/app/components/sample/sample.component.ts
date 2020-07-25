@@ -7,18 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SampleComponent implements OnInit {
 
-  ten : string = "Meo"; 
+  ten: string = "Meo";
 
-  so:number = 2
-dis : boolean = true
+  so: number = 2
+  dis: boolean = true
 
-  obj : any = {ten: "aaaaa", tuoi : 19}
+  obj: any = { ten: "aaaaa", tuoi: 19 }
 
   oneway = 0;
   constructor() { }
 
   ngOnInit(): void {
-    
+
   }
 
 
@@ -34,6 +34,6 @@ dis : boolean = true
     return this.oneway
   }
 
-  percent : 5
+  percent: 5
 
 }
