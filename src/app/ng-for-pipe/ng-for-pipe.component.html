@@ -1,0 +1,7 @@
+<div *ngIf="(npm | async) as items">
+<ul>
+    <li *ngFor="let item of items?.message">{{item}}</li>
+</ul>
+</div>
+
+<img src="{{ (node | async)?.message}}">

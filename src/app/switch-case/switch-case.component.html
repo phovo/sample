@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Lap trinh Angular 8
+                </div>
+                <div class="card-body">
+                    <select [(ngModel)]="selectedValue1">
+                        <option *ngFor="let item of element;" [value]="item.name">{{item.name}}</option>
+                    </select>
+                    
+                    <div [ngSwitch]="selectedValue1">
+                        <p *ngSwitchCase="'One'">One is Selected</p>
+                        <p *ngSwitchDefault>This is Default</p>
+                        <p *ngSwitchCase="'Two'">Two is Selected</p>
+                        <p *ngSwitchCase="'Two'">Two Again used in another element</p>
+                        <p *ngSwitchDefault>This is Default</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

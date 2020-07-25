@@ -1,0 +1,29 @@
+<!-- <app-count [(count)]="count"></app-count>
+<p>{{count}}</p>
+<button (click)="clearCount()">Clear</button>
+
+<app-first></app-first>
+<app-list></app-list>
+<app-ng-style></app-ng-style>
+<app-pipe></app-pipe>
+<app-pipe-transform></app-pipe-transform>
+<app-async-pipe></app-async-pipe> -->
+<!-- <app-async-pipe></app-async-pipe> -->
+<!-- <<app-pipe-transform></app-pipe-transform>
+<app-async-pipe></app-async-pipe>
+<app-ng-for-pipe></app-ng-for-pipe>
+<app-service-pipe></app-service-pipe> -->
+<!-- <app-post></app-post> -->
+<!-- <router-outlet></router-outlet> -->
+
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div><a class="nav-link" routerLinkActive="active" [routerLink]="['movie']">Movie</a></div>
+                <div><a class="nav-link" routerLinkActive="active" [routerLink]="['post']">Post</a></div>
+            </div>
+        </div>
+    </nav>
+    <router-outlet></router-outlet>
+</div>

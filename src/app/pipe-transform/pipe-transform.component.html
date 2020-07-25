@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <!-- <p>{{title}}</p>
+                    <h3>{{date}}</h3> -->
+                    <h3>{{dateStr}}</h3>
+                    
+                    <h3>{{giatri | hoangDuc : 'C'}}</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <h3>Fahrenheit to Celsius</h3>
+                    </div>
+                    <div class="row">
+                        <p>Fahrenheit: <input type="text" [(ngModel)] ="Fahrenheit" />
+                            Celsius : {{Fahrenheit | hoangDuc}}
+                        </p>
+                    </div>
+                    <div class="row">
+                        <h3>Celsius to Fahrenheit </h3>
+                    </div>
+                    <div class="row">
+                        <p> Celsius: <input type="text" [(ngModel)]="Celsius" />
+                            Fahrenheit: {{Celsius | hoangDuc: 'F'}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+        </div>
+        

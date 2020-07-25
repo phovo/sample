@@ -1,0 +1,10 @@
+222{{obs | async | json}}
+    {{obsValue | async | json}}
+<div *ngIf="(obsValue | async ) as value; else elseBlock">
+    {{value}}
+</div>
+
+<ng-template #elseBlock>
+    Observable is loading. Please wait 
+</ng-template>
+

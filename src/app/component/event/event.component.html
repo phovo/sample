@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="card-header">
+        <p>Nested Array</p>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered table-sm">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Mail</th>
+                    <th>Skills</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let meo of employees">
+                    <td>{{meo.name}}</td>
+                    <td>{{meo.email}}</td>
+                    <td>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr *ngFor="let cho of meo.skills;">
+                                    <td>{{cho.skill}}</td>
+                                    <td>{{cho.exp}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
