@@ -11,7 +11,7 @@ import { StringUtilsService } from '../utils/string-utils.service'
 export class PostComponent implements OnInit, OnDestroy {
 
   nameSearch: string;
-  loading: boolean;
+  loading: boolean;///
   errorMessage;
   person: Person;
   personList: Person[];
